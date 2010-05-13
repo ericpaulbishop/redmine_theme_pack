@@ -1,0 +1,85 @@
+h1. The @ecored@ theme.
+
+h2.  Summary
+
+The @libernix-redmine-ecored@ project aims to provide a professional looking red-styled appearance to an installation of "Redmine":http://www.redmine.org/ 
+
+h2. Features
+
+*  *Borders  ➛*  Borders are rounded with CSS3 @-[moz|khtml|webkit]-border-radius@ attributes. Border thickness is 2 pixels in most outer regions, and 1 pixel inside regions.  For browsers that do not support @ -border-radius @, the feature whould hopefully degrade gracefully.
+*  *Logo ➛* A logo is attached to the left of the project title area.  
+*  *Colors ➛* The colors have been chosen to create a "sharp" appearance with strongly delineated regions of text (using borders).  I believe this would make using Redmine more comfortable during long hours of usage on a daily basis, and also reduce strain on the eyes.
+*  *Forms ➛* The formatting and display of forms has been kept untouched as of now. 
+
+h2.  Installation
+
+Using the user-account used to run Redmine (@lighttpd@ in the example below), change to the Redmine themes directory on the command line:
+<pre>
+$  pushd redmine/public/themes
+</pre>
+
+Then fetch the source for this project from github:
+
+<pre>
+$  git clone git://github.com/rajkrish/libernix-redmine-ecored.git
+</pre>
+
+Now you would have a newly created folder called @libernix-redmine-ecored@, 2 others underneath it as follows:
+* @redmine/public/themes/libernix-redmine-ecored/stylesheets/@ - contains the CSS stylesheets,
+* @redmine/public/themes/libernix-redmine-ecored/images/@ - contains PNG images/icons for logo purposes.
+
+In case you are not using the another login account (e.g. root), do not forget to change the file ownership and permissions to the server's instance:
+<pre>
+$  popd
+$  chown  -R lighttpd:lighttpd redmine/public/themes/libernix-redmine-ecored
+$  chmod 755 redmine/public/themes/libernix-redmine-ecored
+</pre>
+
+Now within Redmine, go to Administration ➤ Settings ➤ Display, and change the theme to @Libernix-redmine-ecored@.
+
+No other changes to the Redmine codebase is necessary.
+
+h2.  Screenshots
+
+* Do checkout all the screenshots first! ( "available here":http://www.krishnan.cc/devel/screenshots/redmine-theme/ )
+
+h2.  Files
+
+*  *applicationl.css  ➛*  All the modifications to the default Redmine styles are provided in this file.
+*  *someicon.png  ➛*  The logo that is associated with the project title area.
+
+
+h2.  Testing
+
+Tested with the following web-browsers:
+*  *Konqueror (KHTML engine)  ➛*  Tested on Konqueror 4.3 on Fedora Linux 12.
+*  *Rekonq (Webkit engine)  ➛*  Tested with Rekonq 0.2.0 on Fedora Linux 12.
+*  *Firefox (Gecko engine)  ➛*  Tested with Firefox 3.5.5 on Fedora Linux 12.
+*  *Redmine  ➛*  Tested with Redmine trunk (svn#3095).
+
+h2.  Known issues
+
+*  Did not test with Microsoft Internet Explorer, or Apple Safari browsers, because I don't have the specific operating systems they require (nor the bandwidth to test on those).
+*  Did not test on Opera browser.  I may decide to test on Opera 9.x on Linux, sometime later.
+*  Certain boxes do not look 'perfect' as they don't have a corresponding HTML element surrounding them, making styliing complex.  Changing the HTML code generation would require a major rework, and hence is outside the scope of this project.
+*  When you change to another theme, sometimes the browser does not display the new setting immediately.  This is due to browser caching (I have noticed it in the project's Activity tab.).  If this happens, update some fields in Redmine and then then hit browser refresh button.
+
+
+h2.  Customization
+
+*  *Logo  ➛*  Feel free to remove the included logo with an image or icon of your own own.  If the logo file has a different filename than the one that is provided, you might need to update the CSS stylsheet(s) that reference it.  The maximum height of the logo image should not exceed 66 pixels (for correct appearance).
+*  *Stylesheet  ➛*  At this time there is just 1 stylesheet that contains all the formatting rules.  Feel free to update it to suite your design goals for your custom Redmine installation.
+
+h2.  Feedback/Issues/Patches
+
+* Feel free to report all issues on the "libernix-redmine-ecored":http://github.com/rajkrish/libernix-redmine-ecored  Github project site for this package.  
+* For all the UI related issues, a link to the screenshot(s) if provided, would be much appreciated.
+
+h2.  License
+
+This project and all the associated source files are available under *GNU LGPL v3.0* license, unless specified otherwise.
+
+The images/icons were obtained from "OpenClipart":http://www.openclipart.org/ and it may require a different license.  Please check  the "OpenClipart":http://www.openclipart.org/  website for details.
+
+
+

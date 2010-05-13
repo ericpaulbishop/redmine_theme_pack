@@ -1,0 +1,78 @@
+@import url(../../../stylesheets/application.css);
+
+#top-menu {
+   background-color: #000000;
+}
+
+#header {
+   background: #FFFFFF url(../images/bg.png) repeat scroll; 
+   color: #1793D1;
+   height: 118px;
+}
+
+h1 {
+   padding-top: 14px;
+   font-size: 28px;
+}
+
+#quick-search {
+   background-color: #FFFFFF;
+   margin-top: 20px;
+}
+
+#quick-search a {
+   color: #555555;
+}
+
+h2, .wiki h1 {
+   font-size: 24px;
+}
+
+.contextual {
+   padding: 4px 0px 0px 0px;
+}
+
+#login-form table {
+   background-color: #F9F9F9;
+   border: 1px solid #AAAAAA;
+}
+
+#main-menu {
+   width: 100%;
+}
+
+#main-menu ul {
+   padding-right: 6px;
+   float: right;
+}
+
+#main-menu li a:hover {
+   color: #DBDBDB;
+   background-color: #1793D1;
+}
+
+#main-menu li a.selected, 
+#main-menu li a.selected:hover {
+   background-color: #1793D1;
+   color: #000000;
+}
+
+#main-menu li a {
+	color: #FFFFFF;
+	display:block;
+	font-weight:bold;
+	font-size: 15px;
+	margin: 4px 10px 5px;
+	padding: 0;
+	text-decoration:none;
+}
+
+.box {
+   background-color: #F9F9F9;
+   border: 1px solid #AAAAAA;
+   color: #555555;
+}
+
+#main {
+   background-color: #F9F9F9;
+}

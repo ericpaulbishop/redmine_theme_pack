@@ -1,0 +1,25 @@
+/** Main menu icons */
+#main-menu li a,
+#main-menu li a:hover,
+#main-menu li a:active,
+#main-menu li a.selected,
+#main-menu li a.selected:hover {
+	background-image: url(../images/icons/page.png);
+}
+
+#main-menu li a.overview,  #main-menu li a.overview:hover  { background-image: url(../images/icons/house.png); }
+#main-menu li a.activity,  #main-menu li a.activity:hover  { background-image: url(../images/icons/lightning.png); }
+#main-menu li a.roadmap,   #main-menu li a.roadmap:hover   { background-image: url(../images/icons/flag_green.png); }
+#main-menu li a.issues,    #main-menu li a.issues:hover    { background-image: url(../images/icons/bug.png) }
+#main-menu li a.new-issue, #main-menu li a.new-issue:hover { background-image: url(../images/icons/bug_add.png); }
+#main-menu li a.news,      #main-menu li a.news:hover      { background-image: url(../images/icons/newspaper.png); }
+#main-menu li a.documents, #main-menu li a.documents:hover { background-image: url(../images/icons/page_white_stack.png); }
+#main-menu li a.wiki,      #main-menu li a.wiki:hover      { background-image: url(../images/icons/page_world.png); }
+#main-menu li a.boards,    #main-menu li a.boards:hover    { background-image: url(../images/icons/comments.png); }
+#main-menu li a.repository,#main-menu li a.repository:hover{ background-image: url(../images/icons/drive_network.png); }
+#main-menu li a.files,     #main-menu li a.files:hover     { background-image: url(../images/icons/folder_page_white.png); }
+#main-menu li a.settings,  #main-menu li a.settings:hover  { background-image: url(../images/icons/cog.png); }
+
+/** plugins support */
+#main-menu li a.hudson,    #main-menu li a.hudson:hover    { background-image: url(../images/icons/server.png); }
+#main-menu li a.polls,  #main-menu li a.polls:hover  { background-image: url(../images/icons/tick.png); }
